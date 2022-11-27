@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COS - 공식 온라인 스토어</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png"
+    href="https://image.thehyundai.com/cos_cdn/images/cos/rebrand/re-1-favicon-32.png">
+
+  <!-- css reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!--Google Material Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./scss/main.scss">
+  <script defer src="./js/main.js"></script>
+
+</head>
+
+<body>
+  <div class="search-overay"></div>
+
+  <!-- MOBILE MENU -->
+  <div class="m-search-overay"></div>
+  <div class="mobile-menu">
+    <ul class="first">
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <h2 class="title">신상품</h2>
+          <img src="./images/arrow_forward.svg" alt="arrow_forward">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <h2 class="title">여성</h2>
+          <img src="./images/arrow_forward.svg" alt="arrow_forward">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <h2 class="title">남성</h2>
+          <img src="./images/arrow_forward.svg" alt="arrow_forward">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <h2 class="title">기프트 컬렉션</h2>
+          <img src="./images/arrow_forward.svg" alt="arrow_forward">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <h2 class="title">매거진</h2>
+          <img src="./images/arrow_forward.svg" alt="arrow_forward">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <h2 class="title">지속가능성</h2>
+          <img src="./images/arrow_forward.svg" alt="arrow_forward">
+        </a>
+      </li>
+    </ul>
+    <ul class="under">
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <img src="./images/location.svg" alt="location" class="sub-icon">
+          <span class="sub-title">매장 찾기</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <img src="./images/cs.svg" alt="cs" class="sub-icon">
+          <span class="sub-title">고객 서비스</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <img src="./images/signin.svg" alt="signin" class="sub-icon">
+          <span class="sub-title">로그인</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="depth1">
+          <img src="./images/country.svg" alt="country" class="sub-icon">
+          <span class="sub-title">배송국가:대한민국</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="background-close">
+    <img src="./images/close_white.svg" alt="close">
+  </div>
+  <!-- HEADER -->
+  <header>
+    <div class="notification">
+      <p>
+        연말 시즌을 위한 새로운 컬렉션 |
+
+        <a href="javascript:void(0)">여성 컬렉션</a>
+        <a href="javascript:void(0)">남성 컬렉션</a>
+
+      </p>
+    </div>
+    <div class="inner">
+      <div class="m-menu">
+        <img src="./images/menu.svg" alt="menu">
+      </div>
+      <div class="m-search">
+        <img src="./images/search.png" alt="search">
+      </div>
+      <a href="/" class="logo">
+        <svg width="235px" height="83px" viewBox="0 0 235 83" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>FINAL_Logo_RGB</title>
+          <defs>
+            <polygon id="path-1" points="0 0.005 234.44 0.005 234.44 82.94 0 82.94"></polygon>
+          </defs>
+          <g id="FINAL_Logo_RGB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <mask id="mask-2" fill="white">
+              <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path
+              d="M184.288,62.013 L176.346,71.261 C183.696,79.323 194.129,83 205.036,83 C220.45,83 234.44,73.394 234.44,58.813 C234.44,31.542 190.097,38.539 190.097,21.821 C190.097,15.062 196.738,11.862 205.154,11.862 C212.152,11.862 219.029,15.062 223.771,18.739 L230.053,9.015 C222.941,3.207 214.048,0.005 204.919,0.005 C191.639,0.005 178.004,7.829 178.004,22.056 C178.004,49.328 222.347,42.451 222.347,58.813 C222.347,67.347 213.692,71.142 205.036,71.142 C197.212,71.142 188.913,66.638 184.288,62.013"
+              id="Fill-1" fill="#1B1B1B" mask="url(#mask-2)"></path>
+            <path
+              d="M123.666,71.142 C139.79,71.142 152.951,57.389 152.951,41.502 C152.951,25.496 139.79,11.86 123.666,11.86 C107.543,11.86 94.143,25.496 94.143,41.502 C94.143,57.389 107.543,71.142 123.666,71.142 M123.549,0.005 C146.549,0.005 165.045,18.619 165.045,41.502 C165.045,64.384 146.549,83 123.549,83 C100.666,83 82.049,64.384 82.049,41.502 C82.049,18.619 100.666,0.005 123.549,0.005"
+              id="Fill-3" fill="#1B1B1B" mask="url(#mask-2)"></path>
+            <path
+              d="M72.916,13.877 C65.327,5.221 54.184,0.005 41.496,0.005 C18.496,0.005 0,18.381 0,41.502 C0,64.622 18.496,82.998 41.496,82.998 C54.42,82.998 65.683,77.546 73.272,68.77 L64.143,60.946 C58.806,67.23 50.746,71.142 41.496,71.142 C25.491,71.142 12.093,57.508 12.093,41.502 C12.093,25.496 25.491,11.86 41.496,11.86 C50.746,11.86 58.57,15.892 64.143,22.176 L72.916,13.877"
+              id="Fill-4" fill="#1B1B1B" mask="url(#mask-2)"></path>
+          </g>
+        </svg>
+      </a>
+
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">신상품</div>
+          <div class="item__contents">
+            <div class="inner">
+              <div class="contents__menu">
+                <ul>
+                  <li>
+                    여성 신상품
+                  </li>
+                  <li>
+                    여성 신상품 액세서리
+                  </li>
+                  <li>
+                    남성 신상품
+                  </li>
+                  <li>
+                    남성 신상품 액세서리
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contents__picture">
+                <img src="./images/contents_img1.jpg" alt="contents_img1">
+                <p>COS 신상품을 만나보세요</p>
+              </div>
+              <p class="notification-message">
+                무료배송, 무료반품 혜택과 함께 새로운 상품을 찾아보세요
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">여성</div>
+          <div class="item__contents">
+            <div class="inner">
+              <div class="contents__menu">
+                <ul>
+                  <li>
+                    신상품
+                  </li>
+                  <li>
+                    트렌딩 나우
+                  </li>
+                  <li>
+                    아우터웨어
+                  </li>
+                  <li>
+                    니트웨어
+                  </li>
+                  <li>
+                    캐시미어
+                  </li>
+                  <li>
+                    트라우저
+                  </li>
+                  <li>
+                    드레스
+                  </li>
+                  <li>
+                    탑
+                  </li>
+                  <li>
+                    진
+                  </li>
+                  <li>
+                    셔츠
+                  </li>
+                  <li>
+                    티셔츠
+                  </li>
+                  <li>
+                    스커트
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    신상품 액세서리
+                  </li>
+                  <li>
+                    스카프, 모자 & 장갑
+                  </li>
+                  <li>
+                    가방
+                  </li>
+                  <li>
+                    슈즈
+                  </li>
+                  <li>
+                    주얼리
+                  </li>
+                  <li>
+                    양말 & 타이츠
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    모두 보기
+                  </li>
+                  <li>
+                    파티웨어 <span class="new">NEW</span>
+                  </li>
+                  <li>
+                    기프트 컬렉션
+                  </li>
+                  <li>
+                    라운지웨어 <span class="new">NEW</span>
+                  </li>
+                  <li>
+                    COS 아이콘
+                  </li>
+                  <li>
+                    온라인 익스클루시브
+                  </li>
+                  <li>
+                    에센셜
+                  </li>
+                  <li>
+                    COS by You
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contents__picture">
+                <img src="./images/contents_img2.jpg" alt="contents_img2">
+                <p>아늑하고 따뜻한 계절을 위한 여성 라운지웨어</p>
+              </div>
+              <p class="notification-message">
+                무료배송, 무료반품 혜택과 함께 새로운 상품을 찾아보세요
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">남성</div>
+          <div class="item__contents">
+            <div class="inner">
+              <div class="contents__menu">
+                <ul>
+                  <li>
+                    신상품
+                  </li>
+                  <li>
+                    트렌딩 나우
+                  </li>
+                  <li>
+                    아우터웨어
+                  </li>
+                  <li>
+                    니트웨어
+                  </li>
+                  <li>
+                    트라우저
+                  </li>
+                  <li>
+                    셔츠
+                  </li>
+                  <li>
+                    스웻셔츠
+                  </li>
+                  <li>
+                    진
+                  </li>
+                  <li>
+                    티셔츠
+                  </li>
+                  <li>
+                    폴로 셔츠
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    신상품 액세서리
+                  </li>
+                  <li>
+                    스카프, 모자 & 장갑
+                  </li>
+                  <li>
+                    가방
+                  </li>
+                  <li>
+                    슈즈
+                  </li>
+                  <li>
+                    벨트
+                  </li>
+                  <li>
+                    언더웨어
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    모두 보기
+                  </li>
+                  <li>
+                    파티웨어 <span class="new">NEW</span>
+                  </li>
+                  <li>
+                    기프트 컬렉션
+                  </li>
+                  <li>
+                    라운지웨어 <span class="new">NEW</span>
+                  </li>
+                  <li>
+                    COS 아이콘
+                  </li>
+                  <li>
+                    온라인 익스클루시브
+                  </li>
+                  <li>
+                    에센셜
+                  </li>
+                  <li>
+                    COS by You
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contents__picture">
+                <img src="./images/contents_img3.jpg" alt="contents_img3">
+                <p>편안한 착용감과 활동적인 디자인의 남성 라운지웨어</p>
+              </div>
+              <p class="notification-message">
+                무료배송, 무료반품 혜택과 함께 새로운 상품을 찾아보세요
+              </p>
+            </div>
+        </li>
+        <li class="item">
+          <div class="item__name">매거진</div>
+          <div class="item__contents">
+            <div class="inner">
+              <div class="contents__menu">
+                <ul>
+                  <li>
+                    최신
+                  </li>
+                  <li>
+                    스토리
+                  </li>
+                  <li>
+                    인터뷰
+                  </li>
+                  <li>
+                    장소
+                  </li>
+                  <li>
+                    영감
+                  </li>
+                  <li>
+                    2022 가을 겨울 런웨이
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contents__picture">
+                <img src="./images/contents_img4.jpg" alt="contents_img4">
+                <p>새로운 이야기로 돌아온 COS 매거진</p>
+              </div>
+              <p class="notification-message">
+                무료배송, 무료반품 혜택과 함께 새로운 상품을 찾아보세요
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">지속가능성</div>
+          <div class="item__contents">
+            <div class="inner">
+              <div class="contents__menu">
+                <ul>
+                  <li>
+                    브랜드 비전
+                  </li>
+                  <li>
+                    제품 관리 가이드
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contents__picture">
+                <img src="./images/contents_img5.jpg" alt="contents_img5">
+                <p>지속가능성에 대한 이야기</p>
+              </div>
+              <p class="notification-message">
+                무료배송, 무료반품 혜택과 함께 새로운 상품을 찾아보세요
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="sub-menu">
+        <div class="search">
+
+          <span class="material-icons">search</span>
+          <a href="javascript:void(0)">
+            검색
+          </a>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="javascript:void(0)">
+              로그인
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              배송 국가: 대한민국
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="m-bag">
+        <img src="./images/favorite_border.svg" alt="favorite_border">
+        <img src="./images/shopping_bag.svg" alt="shopping_bag">
+      </div>
+    </div>
+
+    <div class="gnb-search">
+      <div class="search-form">
+        <input type="text" placeholder="검색어를 입력하세요">
+        <span class="close-icon">
+          <img src="./images/close.svg" alt="close">
+        </span>
+      </div>
+    </div>
+    <div class="ad-keywords">
+      <div class="ad-title">추천 검색어</div>
+      <div class="ad-keyword">모자</div>
+      <div class="ad-keyword">터틀넥</div>
+      <div class="ad-keyword">가디건</div>
+      <div class="ad-keyword">트라우저</div>
+      <div class="ad-keyword">재킷</div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="m-text-group">
+      <h1>The Party mix</h1>
+      <p>연말 시즌을 위한 파티웨어</p>
+      <div class="btn-group">
+        <button class="btn">
+          여성 파티웨어
+        </button>
+        <button class="btn">
+          남성 파티웨어
+        </button>
+      </div>
+    </div>
+    <div class="inner">
+      
+        <div class="first"></div>
+        <div class="second"></div>
+
+      <div class="text-group">
+        <h1>The party mix</h1>
+        <p>연말 시즌을 위한 파티웨어</p>
+        <button class="btn">
+          여성 파티웨어
+        </button>
+        <button class="btn">
+          남성 파티웨어
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- SECTION -->
+  <section class="category">
+    <div class="inner">
+      <p class="category__name">여성 카테고리</p>
+      <div class="category__items">
+        <div class="item">
+          <img src="./images/w-item1.jpg" alt="w-item1">
+          <div class="text-group">
+            <h2 class="heading">New arrivals</h2>
+            <p class="label">최신 여성 아이템, 시즈널리티를 반영한 스타일</p>
+            <a href="javascript:void(0)" class="more">여성 신상품</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/w-item2.jpg" alt="w-item2">
+          <div class="text-group">
+            <h2 class="heading">Gifts for her</h2>
+            <p class="label">다채로운 겨울 시즌 스타일로 큐레이팅한 여성 기프트 컬렉션</p>
+            <a href="javascript:void(0)" class="more">여성 기프트</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/w-item3.jpg" alt="w-item3">
+          <div class="text-group">
+            <h2 class="heading">Season of comfort</h2>
+            <p class="label">아늑하고 따뜻한 겨울 시즌을 위한 여성 라운지웨어</p>
+            <a href="javascript:void(0)" class="more">여성 라운지웨어</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <div class="inner">
+      <p class="category__name">남성 카테고리</p>
+      <div class="category__items">
+        <div class="item">
+          <img src="./images/m-item1.jpg" alt="m-item1">
+          <div class="text-group">
+            <h2 class="heading">The new dress code</h2>
+            <p class="label">뉴 시즌을 위한 최신 남성 스타일</p>
+            <a href="javascript:void(0)" class="more">남성 신상품</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/m-item2.jpg" alt="m-item2">
+          <div class="text-group">
+            <h2 class="heading">Gifts for him</h2>
+            <p class="label">타임리스 디자인으로 완성한 남성 기프트 컬렉션</p>
+            <a href="javascript:void(0)" class="more">남성 기프트</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./images/m-item3.jpg" alt="m-item3">
+          <div class="text-group">
+            <h2 class="heading">Home for the holidays</h2>
+            <p class="label">편안한 착용감과 활동성 있는 디자인의 남성 라운지웨어</p>
+            <a href="javascript:void(0)" class="more">남성 라운지웨어</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-top">
+
+    <div class="divider"></div>
+
+    <div class="inner">
+      <ul class="menu">
+        <li>고객 서비스</li>
+        <li>매장 찾기</li>
+        <li>배송 정보</li>
+        <li>반품 및 환불</li>
+        <li>결제 정보</li>
+      </ul>
+      <ul class="menu">
+        <li>지속가능성</li>
+        <li>협력 업체</li>
+        <li>다양성 & 포용성</li>
+        <li>COS By You</li>
+        <li>제품 관리</li>
+        <li>채용 정보</li>
+        <li>프레스 문의</li>
+        <li>고객 문의</li>
+      </ul>
+      <ul class="menu m-menu">
+        <li>Kakaotalk</li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Pinterest</li>
+        <li>Spotify</li>
+      </ul>
+    </div>
+  </footer>
+
+  <footer class="footer-bottom">
+    <div class="inner">
+      <div class="logo">
+        <img src="./images/footer_hyundai.png" alt="footer_hyundai">
+      </div>
+      <ul class="menu">
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>현대백화점 그룹</li>
+        <li>COS 온라인 스토어는 <br>
+          <a href="javascript:void(0)" class="strong">더현대닷컴</a> 을 이용하고 있습니다.</li>
+      </ul>
+
+      <div class="info">
+        <span>주식회사 현대백화점 대표이사 : 김형종 외 2인</span>
+        <address>서울시 강남구 테헤란로98길 12</address>
+        <span> / </span>
+        <span>사업자등록번호 : 211-87-21455 [<a href="javascript:void(0)" class="strong">사업자정보 확인</a>]
+        </span>
+        <span> / </span>
+        <br>
+        <span>통신판매업신고 : 2010-서울강남-01882</span>
+        <span> / </span>
+        <span>개인정보관리 및 청소년보호 책임자 : 회원운영관리담당 장근혁</span>
+        <span> / </span>
+        <br>
+        <span>홈페이지/앱 문의 :
+          <a href="javascript:void(0)" class="strong">customerservice.kr@cos.com</a>
+        </span>
+        <span> / </span>
+        <span>고객센터 : 1800-2765</span>
+        <span> / </span>
+        <span>호스팅서비스 : (주)현대백화점</span>
+        <span> / </span>
+        <br>
+        <span>고객님의 안전거래를 위해 현금결제시 우리은행과 채무지급보증계약을 체결하여 안전거래를 보장하고 있습니다.
+          <a href="javascript:void(0)" class="strong">서비스 가입사실 확인</a>
+        </span>
+        <p class="copyright">
+          <span>CopyrightⓒHyundai Department Store.</span>
+          <span>All rights reserved.</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
