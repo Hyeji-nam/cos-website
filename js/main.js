@@ -48,3 +48,12 @@ mobileSearchEl.addEventListener('click', () => {
   searchOverayEl.classList.toggle('show')
   adKeywordsEl.classList.remove('show')
 })
+
+// tablet main 
+const tabletFirstEl = document.querySelector('.t-inner .first')
+const tabletSecondEl = document.querySelector('.t-inner .second')
+
+const tabletMain = setInterval(() => {
+  tabletFirstEl.classList.toggle('hide')
+  tabletSecondEl.classList.toggle('show')
+}, 3000);
